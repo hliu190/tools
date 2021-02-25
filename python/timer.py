@@ -14,5 +14,5 @@ def timer(fun,times=1000,*args,**kwargs):
         fun(*args, **kwargs)
     end = time.time()
     druation=end-start
-    print(f'It took {druation}s')
+    print(f'It took {druation} s')
 
