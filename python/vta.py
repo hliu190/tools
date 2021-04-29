@@ -13,5 +13,5 @@ import moviepy.editor as mp
 import re
 
 file =  sys.argv[1]
-name = re.search('\.[0-9a-zA-Z]*$',file).group()
-mp.VideoFileClip(file).audio.write_audiofile(name+'.mp3')
+name = re.sub('\.[0-9a-zA-Z]*$','',file)
+mp.VideoFileClip(file).audio.write_audiofile(name+'.wav')
